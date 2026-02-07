@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Love letter for crush</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="letter.css" />
+  </head>
+  <body>
+  <h3 class="official">Just to make it official</h3>
+  <div class="envlope-wrapper">
+      <div id="envelope" class="open">
+        <div class="front flap"></div>
+        <div class="front pocket"></div>
+        <div class="letter">
+          <div class="words line1">Dear Prashansa,</div>
+          <div class="words line2">Will you be my Valentine?</div>
+        </div>
+        <div class="hearts">
+          <div class="heart a1"></div>
+          <div class="heart a2"></div>
+          <div class="heart a3"></div>
+        </div>
+      </div>
+    </div>
+    <div class="confirm">
+      <button id="confirm-yes">Yes</button>
+    </div>
+
+    <script>
+      // Keep envelope open by default. Clicking the Yes button will go to the 006 animation.
+      document.addEventListener('DOMContentLoaded', function () {
+        const yes = document.getElementById('confirm-yes');
+        yes.addEventListener('click', function () {
+          // navigate to the 006 folder's index (sibling folder)
+          window.location.href = '../006/index.html';
+        });
+
+        // (Thank you moved to the animation page.)
+      });
+    </script>
+  </body>
+</html>
