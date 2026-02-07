@@ -6,13 +6,6 @@
   # No build command needed for static HTML
   publish = "."
 
-# Redirect rules (optional - can add custom rules here)
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  force = false
-
 # Headers for better security and performance
 [[headers]]
   for = "/*"
